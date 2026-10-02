@@ -1,0 +1,16 @@
+{
+  "name": "loom-transitstatus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "download_gtfs_merge": "wget -O onebusaway-gtfs-merge.jar https://repo1.maven.org/maven2/org/onebusaway/onebusaway-gtfs-merge-cli/14.2.3/onebusaway-gtfs-merge-cli-14.2.3.jar"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}

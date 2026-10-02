@@ -1,0 +1,51 @@
+[
+  {
+    "key": "metra",
+    "name": "Metra",
+    "url": "https://schedules.metrarail.com/gtfs/schedule.zip",
+    "finalFeed": false,
+    "disabled": false
+  },
+  {
+    "key": "lirr",
+    "name": "Long Island Railroad (MTA)",
+    "url": "http://web.mta.info/developers/data/lirr/google_transit.zip",
+    "finalFeed": false,
+    "disabled": false
+  },
+  {
+    "key": "mnrr",
+    "name": "Metro North (MTA)",
+    "url": "http://web.mta.info/developers/data/mnr/google_transit.zip",
+    "finalFeed": false,
+    "disabled": false
+  },
+  {
+    "key": "cta",
+    "name": "Chicago Transit Authority",
+    "url": "https://www.transitchicago.com/downloads/sch_data/google_transit.zip",
+    "finalFeed": true,
+    "disabled": true
+  },
+  {
+    "key": "southshore",
+    "name": "South Shore Line",
+    "url": "https://s3.amazonaws.com/etatransit.gtfs/southshore.etaspot.net/gtfs.zip",
+    "finalFeed": false,
+    "disabled": false
+  },
+  {
+    "key": "metra_southshore",
+    "name": "Metra and South Shore Line Joint Feed",
+    "finalFeed": true,
+    "sources": ["metra", "southshore"],
+    "disabled": false
+  },
+  {
+    "key": "lirr_mnrr",
+    "name": "LIRR and MNRR Joint Feed",
+    "finalFeed": true,
+    "sources": ["lirr", "mnrr"],
+    "disabled": true
+  }
+]
