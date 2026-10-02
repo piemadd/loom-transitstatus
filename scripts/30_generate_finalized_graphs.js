@@ -19,6 +19,7 @@ feeds.forEach((feed, i) => {
 
   if (feed.finalFeed) {
     console.log(`Converting ${feed.name} into finalized graph`);
+    console.time(`Done converting ${feed.name} into graph (${i + 1} / ${feeds.length})`);
     try {
       execSync(
         `gtfs2graph -m 0,1,2 ./final_zips/${feed.key}.zip | topo | loom > ./final_graphs/${feed.key}.json`,
@@ -27,7 +28,7 @@ feeds.forEach((feed, i) => {
     } catch (error) {
       console.error("Command failed to execute:", error.message);
     }
-    console.log(`Done converting ${feed.name} into graph (${i + 1} / ${feeds.length})`);
+    console.timeEnd(`Done converting ${feed.name} into graph (${i + 1} / ${feeds.length})`);
     return;
   }
 });

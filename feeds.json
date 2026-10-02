@@ -28,6 +28,13 @@
     "disabled": true
   },
   {
+    "key": "amtrak",
+    "name": "Amtrak",
+    "url": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+    "finalFeed": true,
+    "disabled": true
+  },
+  {
     "key": "southshore",
     "name": "South Shore Line",
     "url": "https://s3.amazonaws.com/etatransit.gtfs/southshore.etaspot.net/gtfs.zip",
